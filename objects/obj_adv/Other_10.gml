@@ -4,6 +4,7 @@
 while (true) {
 	// １１．ファイル終端チェック
 	if (file_text_eof(handle_script)) {
+		instance_destroy();
 		break;
 	}
 	
